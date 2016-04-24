@@ -1,0 +1,15 @@
+# site
+name: Dr Mikes Tips
+about: about stuff
+port: 4444
+github: https://github.com/drmikeuk/
+urls:
+    - text: github
+      url: https://github.com/drmikeuk/
+baseurl: ''
+
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+
