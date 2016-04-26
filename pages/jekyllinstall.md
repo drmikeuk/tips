@@ -11,23 +11,25 @@ http://digitalshore.io/how-to-install-jekyll-mac-osx-yosemite/
 Prerequisites
 -------------
 Jekyll is supported on Linux and Mac OS X. I'm assuming you have a Mac with Yosemite or El Capitan (you can check this via Apple > About This Mac).
-You also need to use Terminal to type/paste in code like this ls
+
+You also need to use __Terminal__ to type/paste in code which is displayed in this guide like this:
+{% highlight bash %}ls{% endhighlight %}
 
 1. Xcode 
 2. Xcode command line tools 
 3. Ruby
 4. RubyGems
 
->>> Xcode
+### Xcode
 
->>> Xcode command line tools
+### Xcode command line tools
 xcode-select -p will confirm that its installed and the version
 if its not installed then install using xcode-select --install
 
->>> Ruby
+### Ruby
 I'm going to use the already installed version of Ruby. ruby -v will confirm that its installed and the version
 
->>> RubyGems
+### RubyGems
 gem -v will confirm that its installed and the version
 
 
