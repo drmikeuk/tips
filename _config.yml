@@ -1,15 +1,42 @@
 # site
-name: Dr Mikes Tips
-about: about stuff
+title: Dr Mikes Tips
+name: Dr Mike Gardner
 port: 4444
-github: https://github.com/drmikeuk/
-urls:
-    - text: github
-      url: https://github.com/drmikeuk/
-baseurl: ''
-
+profilepic: "assets/media/albatros.jpg"
+author:
+  name: Dr Mike Gardner
+  email: mike.gardner@nottingham.ac.uk
+  
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
 
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
 
+disqus: dbyll
+google_analytics: dbyll
+
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: dbyll
+
+description: Stylish Jekyll Theme
+
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH:
+
+gems:
+  - jekyll-paginate

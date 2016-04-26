@@ -8,13 +8,13 @@ title:      "Jekyll introduction"
 [Jekyll](https://jekyllrb.com/) takes plain text files plus template files and spits out a functional  website, with no need for a database. This makes it simple, fast, secure and scalable.
 
 * Edit your content in a text editor -- a great way to focus on the content, not the technology
-* When you save changes Jekyll automatically builds your website
-* You can preview in your browser 
+* Save your changes and Jekyll automatically builds your website
+* Preview locally in your browser 
 * Then push to a webserver for the world to view
 
 Using __markdown__ simple text files like this:
 
-{% highlight markdown %}
+{% highlight bash %}
 A header
 --------
 

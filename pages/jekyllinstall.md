@@ -3,62 +3,76 @@ layout:     page
 title:      "Jekyll install"
 ---
 
-https://jekyllrb.com/docs/installation/
+Jekyll is supported on Linux and Mac OS X. I'm assuming you have a Mac with Yosemite (you can check this via Apple > About This Mac).
 
-http://digitalshore.io/how-to-install-jekyll-mac-osx-yosemite/
+<i class="fa fa-exclamation-circle fa-alert" aria-hidden="true"></i> **or El Capitan ???????**
 
+[Official installation instructions are here](https://jekyllrb.com/docs/installation/)
 
 Prerequisites
 -------------
-Jekyll is supported on Linux and Mac OS X. I'm assuming you have a Mac with Yosemite or El Capitan (you can check this via Apple > About This Mac).
-
-You also need to use __Terminal__ to type/paste in code which is displayed in this guide like this:
-{% highlight bash %}ls{% endhighlight %}
 
 1. Xcode 
 2. Xcode command line tools 
 3. Ruby
 4. RubyGems
 
+You also need to use __Terminal__ to type/paste in code. eg code is displayed in this guide like this:
+{% highlight bash %}ls{% endhighlight %}
+
 ### Xcode
+Install from the mac app store.
+Once it’s installed, open Xcode to agree to the terms and conditions.
 
 ### Xcode command line tools
-xcode-select -p will confirm that its installed and the version
-if its not installed then install using xcode-select --install
+<code>xcode-select -p</code>  will test to see if they are installed and show the location if they are
+
+
+
+{% highlight bash %}xcode-select -p {% endhighlight %}{: .inlined } 
+will test to see if they are installed and show the location if they are
+
+If they are not installed then use 
+{% highlight bash %}xcode-select --install{% endhighlight %}{: .inlined } 
+to install.
 
 ### Ruby
-I'm going to use the already installed version of Ruby. ruby -v will confirm that its installed and the version
+I'm using the already installed version of Ruby.
+{% highlight bash %}ruby -v{% endhighlight %}{: .inlined }
+will confirm that its installed and the version
 
 ### RubyGems
-gem -v will confirm that its installed and the version
-
-
-
-
+To confirm installed & show the version:
+{% highlight bash %}gem -v{% endhighlight %}{: .inlined }
 
 
 
 Installation
 ------------
-https://jekyllrb.com/docs/installation/
-The best way to install Jekyll is via RubyGems. At the terminal prompt:
-$ gem install jekyll
 
-Requirements
+At the terminal prompt type:
+{% highlight bash %}sudo gem install jekyll{% endhighlight %}{: .inlined }
+and enter your password if prompted.
+
+### Troubleshooting
+
+See the [official troubleshooting guide](http://jekyllrb.com/docs/troubleshooting/)
+
+I updated both the xcode command line tools and Ruby gems:
+
+{% highlight bash %}xcode-select --install
+gem update --system{% endhighlight %}
 
 
+### Hello world
+Create a new Jekyll site just to see if everything works
 
-1. Xcode - http://stackoverflow.com/questions/15371925/how-to-check-if-command-line-tools-is-installed
-			xcode-select -p 	-> dir 				-> is installed on macbook (osx 10.10.5 Yosemite)
-2. Ruby		ruby -v 			-> ruby 2.0.0p481 	-> is installed
-3. RubyGems gem -v 				-> 2.0.14 			-> is installed
-4. NodeJS
+{% highlight bash %}cd code
+jekyll new myblog
+cd myblog
+jekyll serve{% endhighlight %}
 
-http://digitalshore.io/how-to-install-jekyll-mac-osx-yosemite/
-sudo gem install jekyll
+Now goto [http://localhost:4000](http://localhost:4000)
 
-http://jekyllrb.com/docs/troubleshooting/ suggests sudo gem update --system
-but still fails
 
-try xcode-select --install
 
