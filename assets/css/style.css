@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:500&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic);
+
 body{
 	color: #2c3e50;
 	font-size: 18px;	/*MJG: everything bigger! */
@@ -46,6 +48,8 @@ a.nav-link:hover { color: #777; }
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
+
+#contact-list {margin-top: 2em;}
 
 #contact-list li .fa,
 article .share .btn {
@@ -121,20 +125,20 @@ article img { max-width: 100%; }
 
 h1,h2,h3,h4,h5,h6 { font-family: 'Lato', sans-serif; }
 
-article.home h1,
-article.home h2,
-article.home h3,
-article.home h4,
-article.home h5,
-article.home h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Lato', sans-serif;
 	/*color: #f2756a;*/
 }
 
-h1 		{font-size: 48px;} /*bigger */
+h1 		{font-size: 48px; 	font-weight: 300;} /*bigger */
 /* more white space above */
-h2 		{margin-top: 40px}
-h3 		{margin-top: 30px; margin-bottom: 6px; font0-size: 22px;}
+h2 		{margin-top: 40px; 	font-weight: 300;}
+h3 		{margin-top: 30px; 	font-weight: 400; margin-bottom: 6px; font-size: 22px;}
 
 
 article.home h1 a,
@@ -204,3 +208,6 @@ ul.dropdown-menu>li>a>i.fa {
 code {color: #2c3e50; background: #F5F5F5; padding: 2px 8px;}
 
 .fa-alert {color: #992244; font-size: 130%;}
+
+blockquote { border-left: 0px; padding: 10px 0px;}
+blockquote p {font-family: 'Playfair Display', serif; font-weight: 400; font-style: italic; font-size: 30px;}

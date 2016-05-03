@@ -5,7 +5,7 @@ title:      "Jekyll install"
 
 Jekyll is supported on Linux and Mac OS X. I'm assuming you have a Mac with Yosemite (you can check this via Apple > About This Mac).
 
-<i class="fa fa-exclamation-circle fa-alert" aria-hidden="true"></i> **or El Capitan ???????**
+<i class="fa fa-exclamation-circle fa-alert" aria-hidden="true"></i> or maybe El Capitan ?
 
 [Official installation instructions are here](https://jekyllrb.com/docs/installation/)
 
@@ -25,25 +25,21 @@ Install from the mac app store.
 Once it’s installed, open Xcode to agree to the terms and conditions.
 
 ### Xcode command line tools
-<code>xcode-select -p</code>  will test to see if they are installed and show the location if they are
-
-
-
-{% highlight bash %}xcode-select -p {% endhighlight %}{: .inlined } 
+{% highlight bash %}xcode-select -p {% endhighlight %}
 will test to see if they are installed and show the location if they are
 
-If they are not installed then use 
-{% highlight bash %}xcode-select --install{% endhighlight %}{: .inlined } 
-to install.
+If they are not installed then use this to install:
+{% highlight bash %}xcode-select --install{% endhighlight %} 
+
 
 ### Ruby
 I'm using the already installed version of Ruby.
-{% highlight bash %}ruby -v{% endhighlight %}{: .inlined }
+{% highlight bash %}ruby -v{% endhighlight %}
 will confirm that its installed and the version
 
 ### RubyGems
 To confirm installed & show the version:
-{% highlight bash %}gem -v{% endhighlight %}{: .inlined }
+{% highlight bash %}gem -v{% endhighlight %}
 
 
 
@@ -51,7 +47,7 @@ Installation
 ------------
 
 At the terminal prompt type:
-{% highlight bash %}sudo gem install jekyll{% endhighlight %}{: .inlined }
+{% highlight bash %}sudo gem install jekyll{% endhighlight %}
 and enter your password if prompted.
 
 ### Troubleshooting

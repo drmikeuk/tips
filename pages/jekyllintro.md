@@ -3,7 +3,7 @@ layout:     page
 title:      "Jekyll introduction"
 ---
 
->Transform your plain text into static websites and blogs
+>Transform your plain text into static websites and blogs...
 
 [Jekyll](https://jekyllrb.com/) takes plain text files plus template files and spits out a functional  website, with no need for a database. This makes it simple, fast, secure and scalable.
 
@@ -30,6 +30,7 @@ And a second paragraph with some __bold__ and _italic_ text
 
 become beautiful webpages like this:
 
+<hr>
 A header
 --------
 
