@@ -3,19 +3,24 @@ layout:     page
 title:      "Jekyll basics"
 ---
 
-Check out the [Jekyll documentation](https://jekyllrb.com/docs/home/) plus these [Jekyll Tips](http://jekyll.tips/guide/introduction/).
+This page outlines how Jekyll works, how the different components of a site are organised, how to create and publish new sites.
+
+For more information check out the [Jekyll documentation](https://jekyllrb.com/docs/home/) plus these [Jekyll Tips](http://jekyll.tips/guide/introduction/).
+
+
 
 Overview
 --------
 Jekyll takes plain text files plus template files and spits out a functional website.  
-This will create a new test site:
+When you edit or add pages Jekyll will regenerate the site and you can see the changes when you reload your browser.
+
+eg this will create a new test site:
 {% highlight bash %}cd code
 jekyll new mytestsite
 cd mytestsite
 jekyll serve{% endhighlight %}
 Now browse to [http://localhost:4000](http://localhost:4000])
 
-When you edit or add pages Jekyll will regenerate the site and you can see the changes when you reload your browser.
 
 Files
 -----
@@ -38,11 +43,11 @@ Create a new site
 
 Assuming that you keep your code in a directory called 'code'.
 
-NB. Edit the <code>_config.yml</code> to change the port from 4000 to say 4001
+NB. If you have seveal Jekyll sites then you may want to edit the <code>_config.yml</code> to change the port from 4000 to say 4001
 
 ### From scratch
 
-To create a site called 'mytestsite' in a directory called 'code'
+To create a site called 'mytestsite' in a directory called 'code':
 {% highlight bash %}cd code
 jekyll new mytestsite
 cd mytestsite
