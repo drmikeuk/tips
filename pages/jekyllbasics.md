@@ -36,16 +36,45 @@ Files
 Create a new site
 -----------------
 
+Assuming that you keep your code in a directory called 'code'.
+
+NB. Edit the <code>_config.yml</code> to change the port from 4000 to say 4001
+
 ### From scratch
+
+To create a site called 'mytestsite' in a directory called 'code'
+{% highlight bash %}cd code
+jekyll new mytestsite
+cd mytestsite
+jekyll serve{% endhighlight %}
+Now browse to [http://localhost:4000](http://localhost:4000])
 
 ### From a template
 
+{% highlight bash %}cd code
+unzip template
+cd template 			# or whatever the name of the template is
+jekyll serve{% endhighlight %}
+Now browse to [http://localhost:4000](http://localhost:4000])
+
+
 ### Clone from an existing site
 
-https://uazmjg@bitbucket.org/uazmjg/frederickdouglass.git
+{% highlight bash %}cd code
+git clone existingsite
+eg https://uazmjg@bitbucket.org/uazmjg/frederickdouglass.git
+cd existingsite 		# or whatever the name of the existing site is
+jekyll serve{% endhighlight %}
+Now browse to [http://localhost:4000](http://localhost:4000])
+
+
 
 Content
 -------
+
+Pages of your site can sit in the root eg `/index.html`
+
+Blog posts live in `_posts`
 
 ### YAML
 
