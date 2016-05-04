@@ -1,24 +1,93 @@
 ---
 layout:     page
-title:      "iTerm"
+title:      "Markdown"
 ---
 
->Brings the terminal into the modern age with features you never knew you always wanted
+> An easy-to-read, easy-to-write plain text format that can be converted to HTML
 
-[iTerm2](https://www.iterm2.com/) is a replacement for Terminal. 
+[Kramdown](http://kramdown.gettalong.org/quickref.html) is Jekylls default flavour of [Markdown](https://daringfireball.net/projects/markdown/). You can mix in vanilla HTML too.
 
-Install
--------
+This code
+=========
 
-[Download here](https://www.iterm2.com/downloads.html), unzip and move the application to /Applications/  
-Then drag to your dock for easy access.
+{% highlight markdown %}
+A Header
+--------
 
-Setup
------
+### Sub-heading
 
-* Install [dark solarized colours](http://ethanschoonover.com/solarized) - follow [these instructions](http://blog.likewise.org/2012/04/how-to-set-up-solarized-color-scheme.html)
-* Increase font size:Profiles > Text: Regular = 14pt
+A paragraph of text with __bold__ and _italic_
 
-Tips
-----
-<code>Cmd-T</code> open new tab
+Another paragraph
+
+> A blockquote.
+
+* Bulleted lists
+* are easy
+	* tab in for indents
+
+1. Numbered lists are easy too
+1. No need to number correctly!
+
+> A big blockquote with a source
+> <footer><cite>Source</cite></footer>
+
+[link title](url) eg [link to google](http://google.com/)
+
+![Picture of Albatross](/assets/media/albatros.jpg)
+<span class="caption text-muted">Albatross ahoy!</span>
+
+Add footnotes using placeholders like this: [^1]. 
+Alternatively you can use ‘n’ rather than numbers [^n] so you don’t have to worry about which number
+you are on. At the very end of your post, you can define your matching footnotes as shown below:
+
+[^1]: This is my first footnote
+[^n]: A final footnote
+
+Use backticks for inline code: `some command here` within a paragraph
+
+For longer blocks and different language syntax highlighting:
+{% highlight bash %}cd somedir
+xcode-select -p {% endhighlight %}
+
+{% endhighlight %}
+
+Becomes
+=======
+
+A Header
+--------
+
+### Sub-heading
+
+A paragraph of text with __bold__ and _italic_
+
+Another paragraph
+
+> A blockquote.
+
+* Bulleted lists
+* are easy
+	* tab in for indents
+
+1. Numbered lists are easy too
+1. No need to number correctly!
+
+> A big blockquote with a source
+> <footer><cite>Source</cite></footer>
+
+[link title](url) eg [link to google](http://google.com/)
+
+![Picture of Albatross](/assets/media/albatros.jpg)
+<span class="caption text-muted">Albatross ahoy!</span>
+
+Add footnotes using placeholders like this: [^1]. Alternatively you can use ‘n’ rather than numbers [^n] so you don’t have to worry about which number you are on. At the very end of your post, you can define your matching footnotes as shown below:
+
+[^1]: This is my first footnote
+[^n]: A final footnote
+
+Use backticks for inline code: `some command here` within a paragraph
+
+For longer blocks and different language syntax highlighting:
+{% highlight bash %}cd somedir
+xcode-select -p {% endhighlight %}

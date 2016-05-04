@@ -12,7 +12,7 @@ For more information check out the [Jekyll documentation](https://jekyllrb.com/d
 Overview
 --------
 Jekyll takes plain text files plus template files and spits out a functional website.  
-When you edit or add pages Jekyll will regenerate the site and you can see the changes when you reload your browser.
+__When you edit or add pages Jekyll will regenerate the site and you can see the changes when you reload your browser.__
 
 eg this will create a new test site:
 {% highlight bash %}cd code
@@ -43,7 +43,7 @@ Create a new site
 
 Assuming that you keep your code in a directory called 'code'.
 
-NB. If you have seveal Jekyll sites then you may want to edit the <code>_config.yml</code> to change the port from 4000 to say 4001
+NB. If you have several Jekyll sites then you may want to edit the <code>_config.yml</code> to change the port from 4000 to say 4001.
 
 ### From scratch
 
@@ -67,23 +67,41 @@ Now browse to [http://localhost:4000](http://localhost:4000])
 
 {% highlight bash %}cd code
 git clone existingsite
-eg https://uazmjg@bitbucket.org/uazmjg/frederickdouglass.git
 cd existingsite 		# or whatever the name of the existing site is
 jekyll serve{% endhighlight %}
 Now browse to [http://localhost:4000](http://localhost:4000])
 
+eg git clone https://uazmjg@bitbucket.org/uazmjg/frederickdouglass.git
 
 
 Content
 -------
 
-Pages of your site can sit in the root eg `/index.html`
+Pages of your site can sit in the root eg `/index.html` or subdirectories eg `/tools/index.html`.  
+Blog posts live in `_posts` and should be named `YYYY-MM-DD-title.MARKUP` eg `2015-12-31-new-years-eve-is-awesome.md`
 
-Blog posts live in `_posts`
+Content has two parts:
 
-### YAML
+* __metadata__ in the front piece
+* the visible content
 
-### Markdown
+### Metadata
+
+The format is YAML between two sets of triple dashes: \-\-\-, which sits at the beginning of a file.
+This metadata can specify which layout to use or variables (eg title or thumbnail image) which can be included in the page. eg:
+
+{% highlight bash %}---
+layout:     page
+title:      "Jekyll basics"
+---{% endhighlight %}
+
+### Content
+
+This can be full HTML but I prefer [Markdown](/pages/mardown/) for its simplicty and readability.
 
 Publish / Deploy
 ----------------
+
+
+
+

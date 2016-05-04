@@ -6,11 +6,12 @@ profilepic: "assets/media/albatros.jpg"
 author:
   name: Dr Mike Gardner
   email: mike.gardner@nottingham.ac.uk
-  
+
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
 
+permalink: pretty
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
@@ -24,7 +25,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: Dr Mikes Tips
 
 description: Stylish Jekyll Theme
 
