@@ -30,11 +30,11 @@ Another paragraph
 1. No need to number correctly!
 
 > A big blockquote with a source
-> <footer><cite>Source</cite></footer>
+> <footer><cite>Source reference here</cite></footer>
 
 [link title](url) eg [link to google](http://google.com/)
 
-![Picture of Albatross](/assets/media/albatros.jpg)
+![Picture of Albatross](/assets/media/albatros.jpg){:.img-responsive}
 <span class="caption text-muted">Albatross ahoy!</span>
 
 Add footnotes using placeholders like this: [^1]. 
@@ -43,6 +43,8 @@ you are on. At the very end of your post, you can define your matching footnotes
 
 [^1]: This is my first footnote
 [^n]: A final footnote
+
+Add extra classes by suffixing elements with `{:.classname}`
 
 Use backticks for inline code: `some command here` within a paragraph
 
@@ -74,17 +76,19 @@ Another paragraph
 1. No need to number correctly!
 
 > A big blockquote with a source
-> <footer><cite>Source</cite></footer>
+> <footer><cite>Source reference here</cite></footer>
 
 [link title](url) eg [link to google](http://google.com/)
 
-![Picture of Albatross](/assets/media/albatros.jpg)
+![Picture of Albatross](/assets/media/albatros.jpg){:.img-responsive}
 <span class="caption text-muted">Albatross ahoy!</span>
 
 Add footnotes using placeholders like this: [^1]. Alternatively you can use ‘n’ rather than numbers [^n] so you don’t have to worry about which number you are on. At the very end of your post, you can define your matching footnotes as shown below:
 
 [^1]: This is my first footnote
 [^n]: A final footnote
+
+Add extra classes by suffixing elements with `{:.classname}`
 
 Use backticks for inline code: `some command here` within a paragraph
 

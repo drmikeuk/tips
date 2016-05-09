@@ -3,11 +3,12 @@ layout:     page
 title:      "Jekyll install"
 ---
 
-Jekyll is supported on Linux and Mac OS X. I'm assuming you have a Mac with Yosemite (you can check this via Apple > About This Mac).
+Jekyll is supported on Linux and Mac OS X. [Official installation instructions are here](https://jekyllrb.com/docs/installation/).  
+I'm assuming you have a Mac with Yosemite (you can check this via Apple > About This Mac). 
 
-<i class="fa fa-exclamation-circle fa-alert" aria-hidden="true"></i> or maybe El Capitan ?
+<i class="fa fa-exclamation-circle fa-alert" aria-hidden="true"></i> NB. Update re El Capitan -- /usr/local/bin [ref](https://jekyllrb.com/docs/troubleshooting/#installation-problems)
 
-[Official installation instructions are here](https://jekyllrb.com/docs/installation/)
+
 
 Prerequisites
 -------------

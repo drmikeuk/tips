@@ -1,24 +1,55 @@
 ---
 layout:     page
-title:      "Github pages"
+title:      "Github"
 ---
 
->Brings the terminal into the modern age with features you never knew you always wanted
+[Github](https://github.com/) is a web-based repository hosting service. You can use it to host source code plus documentation, wikis, issue tracking & more. Public (ie open) projects are free.
 
-[iTerm2](https://www.iterm2.com/) is a replacement for Terminal. 
+You can also use [Github pages](/pages/github/) to host static websites directly from your Github repository.
 
-Install
--------
+Github hosts __Git__ repositories - these are a way of versioning / tracking changes to a set of files.
 
-[Download here](https://www.iterm2.com/downloads.html), unzip and move the application to /Applications/  
-Then drag to your dock for easy access.
 
-Setup
------
+Git basics
+----------
 
-* Install [dark solarized colours](http://ethanschoonover.com/solarized) - follow [these instructions](http://blog.likewise.org/2012/04/how-to-set-up-solarized-color-scheme.html)
-* Increase font size:Profiles > Text: Regular = 14pt
+This is just for background information, you might want to skip straight to [Github pages](/pages/github/).
 
-Tips
-----
-<code>Cmd-T</code> open new tab
+### Create
+
+To create a new local repository simply create a new directory and type `git init`
+eg
+
+{% highlight bash %}
+cd code
+mkdir helloworld
+cd helloworld
+git init
+{% endhighlight %}
+
+### Clone
+
+To grab a copy of a remote repository use `git clone <url>`
+eg
+
+{% highlight bash %}
+cd code
+git clone https://github.com/username/somerepository
+cd somerepository
+{% endhighlight %}
+
+### Commit
+
+To tell Git which files to version, first __add__ them to the repository using `git add <filename>`.  
+Then you need to __commit__ these __staged__ files using `git commit` and providing a brief __commit message__ explaining whats changed.  
+And finally you can __push__ these to a remote repository with `git push` eg
+
+{% highlight bash %}
+cd code
+cd somerepository
+git add file1.txt file2.txt
+git commit -m 'Initial commit, adding new files'
+git push
+{% endhighlight %}
+
+![Diagram of git stages](/assets/media/gitbasics.png)

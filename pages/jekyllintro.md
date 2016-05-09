@@ -12,7 +12,7 @@ title:      "Jekyll introduction"
 * Preview locally in your browser 
 * Then push to a webserver for the world to view
 
-Using __markdown__ simple text files like this:
+Using __markdown__, simple text files like this:
 
 {% highlight bash %}
 A header

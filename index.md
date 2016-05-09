@@ -5,21 +5,24 @@ tagline:
 nav: exclude
 ---
 
-<p>Some notes on using <b>Jekyll</b> to create static websites...</p>
+Some notes on using __Jekyll__ to create static websites...
 
+* [Jekyll introduction](pages/jekyllintro/)
 
-<ul class="posts">
+Installation
 
-{% assign pages_list = site.pages %}
-{% for node in pages_list %}
-  {% if node.title != null %}
-    {% if node.nav != "exclude" %}
-      <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
-    {% endif %}
-  {% endif %}
-{% endfor %}
-</ul>
+* [iTerm](pages/iterm/) -- a nicer terminal
+* [Sublime text](/pages/sublime/) -- the text editor you’ll fall in love with
+* [Jekyll](/pages/jekyllinstall/) -- transform your plain text into static websites and blogs
+* Sourcetree -- a graphical Git client
 
+Using
+
+* [Jekyll basics](/pages/jekyllbasics/) -- how Jekyll works, how the different components of a site are organised, how to create and publish new sites
+* [Markdown](/pages/markdown/) -- easy-to-read, easy-to-write plain text format
+* [Github](/pages/github/) -- versioning / tracking changes to your files
+* [Github pages](/pages/githubpages/) --- hosting your website
+* Sourcetree -- a graphical Git client to publish your site
 
 
 

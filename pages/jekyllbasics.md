@@ -25,18 +25,16 @@ Now browse to [http://localhost:4000](http://localhost:4000])
 Files
 -----
 
-| FileDirectory | Contains |
-| ------------ | ------------- | 
-| _config.yml | site config |
-| _includes   | parts of templates |
-| _layouts    | page templates |
-| _posts      | blog posts |
-| _site       | your generated site |
-| about.md    | an about page |
-| index.html  | the home page |
-
-
-
+| File / Directory | Contains      |
+| ------------     | ------------- | 
+| _config.yml      | site config   |
+| _includes        | parts of templates |
+| _layouts         | page templates |
+| _posts           | blog posts |
+| _site            | your generated site |
+| about.md         | an about page |
+| index.html       | the home page |
+{:.table}
 
 Create a new site
 -----------------
@@ -97,11 +95,13 @@ title:      "Jekyll basics"
 
 ### Content
 
-This can be full HTML but I prefer [Markdown](/pages/mardown/) for its simplicty and readability.
+This can be full HTML but I prefer [Markdown](/pages/markdown/) for its simplicty and readability.
 
 Publish / Deploy
 ----------------
 
+Once your site is ready you can simply copy the files from `_site` to a webserver to make it visible to the world.
 
+One very simple way to publish a site is to use [Github pages](/pages/githubpages/).
 
 
