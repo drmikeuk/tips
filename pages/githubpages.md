@@ -23,7 +23,38 @@ git push -u origin master{% endhighlight %}
 Project site
 ------------
 
+* Create a new repository at [github.com](https://github.com/new)
+* Create a gh-pages branch
+* Make gh-pages the default branch (since the primary purpose is to serve a static website)
+* Clone the repository `git clone https://github.com/<username>/<repository>.github.io`
+* Add some content (eg index.html)
+* Push it 
+{% highlight bash %}git add --all
+git commit -m "Initial commit"
+git push -u origin master{% endhighlight %}
+* Browse to http://<username>.github.io./<repository>
 
 
-Custom url
-----------
+Custom domain name
+------------------
+
+See [Githubs documentation](https://help.github.com/articles/setting-up-your-pages-site-repository/)
+
+Add your custom domain name
+
+* Create a new file in your repository called CNAME (with all caps!)
+* In this file add a single domain with your custom domain name (just the name; no http://)
+* Push this new file
+
+Confirm your custom domain name on [Github](https://github.com/)
+
+* Goto your repository on Github
+* Click Settings (cog icon; top right)
+* Under 'Github Pages' you should see "Your site is published at _your domain name_"
+
+Set up your custom domain with your DNS provider
+
+* See [Githubs documentation](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/)
+* eg setup a CNAME for blog.mydomain.com that points to yourusername.github.io
+
+

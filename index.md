@@ -5,7 +5,7 @@ tagline:
 nav: exclude
 ---
 
-Some notes on using __Jekyll__ to create static websites...
+>Some notes on using Jekyll to create static websites...
 
 * [Jekyll introduction](pages/jekyllintro/)
 
