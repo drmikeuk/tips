@@ -12,13 +12,15 @@ User site
 
 * Sign up for a [Github account](https://github.com/)
 * Create a new repository at [github.com](https://github.com/new) named _username_.github.io
-* Clone the repository `git clone https://github.com/<username>/<username>.github.io`
+	* Add collaborators if push access required for others (Settings: collaborators)
+* Goto the place where you want to store your files eg `cd code`
+* Clone the repository `git clone https://github.com/<username>/<username>.github.io` (or use sourcetree)
 * Add some content (eg index.html)
 * Push it 
 {% highlight bash %}git add --all
 git commit -m "Initial commit"
 git push -u origin master{% endhighlight %}
-* Browse to http://<username>.github.io.
+* Browse to `http://<username>.github.io`
 
 Project site
 ------------
@@ -26,7 +28,7 @@ Project site
 * Create a new repository at [github.com](https://github.com/new)
 * Create a gh-pages branch
 * Make gh-pages the default branch (since the primary purpose is to serve a static website)
-* Clone the repository `git clone https://github.com/<username>/<repository>.github.io`
+* Clone the repository `git clone https://github.com/<username>/<repository>.github.io` (or use sourcetree)
 * Add some content (eg index.html)
 * Push it 
 {% highlight bash %}git add --all
