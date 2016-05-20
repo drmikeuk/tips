@@ -8,7 +8,7 @@ title:      "Gimp"
 Install
 -------
 
-[Download here](https://www.gimp.org/downloads/), and install.  
+[Download here](https://www.gimp.org/downloads/), and install - drag the application to /Applications/.  
 Then drag to your dock for easy access.
 
 Tips
