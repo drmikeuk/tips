@@ -22,7 +22,7 @@ Using
 * [Markdown](/pages/markdown/) -- easy-to-read, easy-to-write plain text format
 * [Github](/pages/github/) -- versioning / tracking changes to your files
 * [Github pages](/pages/githubpages/) --- hosting your website
-* Sourcetree -- a graphical Git client to publish your site
+* [Sourcetree](/pages/sourcetree/) -- a graphical Git client to publish your site
 
 
 
