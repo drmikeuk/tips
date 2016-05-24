@@ -14,7 +14,7 @@ Installation
 * [iTerm](pages/iterm/) -- a nicer terminal
 * [Sublime text](/pages/sublime/) -- the text editor you’ll fall in love with
 * [Jekyll](/pages/jekyllinstall/) -- transform your plain text into static websites and blogs
-* Sourcetree -- a graphical Git client
+* [Sourcetree](/pages/sourcetree/) -- a graphical Git client
 
 Using
 
