@@ -34,7 +34,7 @@ Project site
 {% highlight bash %}git add --all
 git commit -m "Initial commit"
 git push -u origin master{% endhighlight %}
-* Browse to http://<username>.github.io./<repository>
+* Browse to `http://<username>.github.io./<repository>`
 
 
 Custom domain name
@@ -57,6 +57,7 @@ Confirm your custom domain name on [Github](https://github.com/)
 Set up your custom domain with your DNS provider
 
 * See [Githubs documentation](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/)
-* eg setup a CNAME for blog.mydomain.com that points to yourusername.github.io
+* eg for subdomains setup a CNAME for projectname.mydomain.com that points to yourusername.github.io
+* eg for apex domains (eg mydomain.com) setup an A record to point to githubs servers (may take 24-48hrs to take effect)
 
 
