@@ -25,7 +25,7 @@ git push -u origin master{% endhighlight %}
 Project site
 ------------
 
-* Create a new repository at [github.com](https://github.com/new)
+* Create a new repository at [github.com](https://github.com/)
 * Create a gh-pages branch
 * Make gh-pages the default branch (since the primary purpose is to serve a static website)
 * Clone the repository `git clone https://github.com/<username>/<repository>.github.io` (or use sourcetree)
