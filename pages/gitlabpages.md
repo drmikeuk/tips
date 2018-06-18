@@ -19,6 +19,8 @@ jekyll new helloworld{% endhighlight %}
 * Add this [.gitlab-ci.yml](https://gitlab.com/pages/jekyll/blob/master/.gitlab-ci.yml) to the root of your project (this controls the build process)
 * Add this [Gemfile](https://gitlab.com/pages/jekyll/blob/master/Gemfile)
 
+NB. Ensure `_config.yml` contains `permalink: pretty` so that Jekyll builds eg about.md as **/about/index.html** not **/about.html** so then links to **/about/** work (this isnt need on GitHub; [ref](https://gitlab.com/pages/jekyll/issues/6))
+
 ### Create a new local repository
 {% highlight bash %}cd helloworld
 git init{% endhighlight %}
@@ -45,6 +47,8 @@ Or in [Sourcetree](/pages/sourcetree/):
 * Check on the build process at [GitLab](https://gitlab.com/) on the Ci/CD > Pipelines page
 * Browse to `https://<username>.gitlab.io/<projectname>`
 eg `https://drmikegardner.gitlab.io/helloworld`
+
+
 
 
 <!--
